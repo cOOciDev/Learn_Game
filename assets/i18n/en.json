@@ -40,17 +40,32 @@
     "cardA": {
       "title": "Runner Mobile — Shaper City",
       "desc": "Six-week team sprint focused on monetisation loops and LiveOps cadence.",
-      "points": ["Lightweight physics", "Addressables pipeline", "A/B event framework", "LCP < 2.5s"]
+      "points": [
+        "Lightweight physics",
+        "Addressables pipeline",
+        "A/B event framework",
+        "LCP < 2.5s"
+      ]
     },
     "cardB": {
       "title": "FPS Prototype — Steel Horizon",
       "desc": "Alpha demo with modular weapon system and responsive UI.",
-      "points": ["Custom state machine", "Netcode foundations", "GPU profiling", "Adaptive HUD"]
+      "points": [
+        "Custom state machine",
+        "Netcode foundations",
+        "GPU profiling",
+        "Adaptive HUD"
+      ]
     },
     "cardC": {
       "title": "VR Experience — Deep Space Labs",
       "desc": "Educational VR journey with hand-tracked interactions and spatial UI.",
-      "points": ["Interaction toolkit", "Pass-through UX", "Performance budget", "Store-ready build"]
+      "points": [
+        "Interaction toolkit",
+        "Pass-through UX",
+        "Performance budget",
+        "Store-ready build"
+      ]
     }
   },
   "syllabus": {
@@ -59,17 +74,30 @@
       "strategy": {
         "title": "Strategy & Design",
         "desc": "Audience discovery, gameplay loops, and in-game economy design.",
-        "points": ["Product discovery", "Game design doc", "Economy balancing"]
+        "points": [
+          "Product discovery",
+          "Game design doc",
+          "Economy balancing"
+        ]
       },
       "production": {
         "title": "Production & Tech",
         "desc": "Unity/Unreal pipelines, Git, and lightweight CI for small teams.",
-        "points": ["Version control", "GitHub CI/CD", "Addressables & sub-scenes"]
+        "points": [
+          "Version control",
+          "GitHub CI/CD",
+          "Addressables & sub-scenes"
+        ]
       },
       "polish": {
         "title": "Polish & Experience",
         "desc": "Optimised VFX, lighting passes, systematic UI, and user testing.",
-        "points": ["Shader Graph", "Lighting polish", "Design systems", "Playtests & telemetry"]
+        "points": [
+          "Shader Graph",
+          "Lighting polish",
+          "Design systems",
+          "Playtests & telemetry"
+        ]
       }
     }
   },
@@ -95,17 +123,35 @@
       "name": "Full name",
       "phone": "Phone number",
       "course": "Choose a course",
-      "note": "Message (optional)"
+      "note": "Message (optional)",
+      "source": "How did you hear about us?"
     },
     "placeholders": {
       "name": "e.g. Sara Rad",
       "phone": "+9891…",
-      "note": "Tell us about your goals or timing..."
+      "note": "Tell us about your goals or timing...",
+      "source": "Select one"
     },
     "consent": "I agree to the privacy notice.",
     "submit": "Submit application",
     "ok": "Request received—our advisors will reach out shortly.",
-    "fail": "Something went wrong. Please try again or ping us on socials."
+    "fail": "Something went wrong. Please try again or ping us on socials.",
+    "sources": {
+      "placeholder": "Select one",
+      "instagram": "Instagram",
+      "telegram": "Telegram",
+      "search": "Search engines",
+      "friend": "Friend or colleague",
+      "other": "Other"
+    },
+    "errors": {
+      "fullName": "Please enter your full name (min 3 characters).",
+      "phone": "Phone must start with 09 and be 11 digits.",
+      "course": "Select a course to continue.",
+      "source": "Let us know how you heard about us.",
+      "note": "Message must be at least 10 characters.",
+      "consent": "We need your consent to proceed."
+    }
   },
   "footer": {
     "tagline": "Specialist GameDev training focused on portfolio-ready output.",

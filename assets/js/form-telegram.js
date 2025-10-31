@@ -86,6 +86,7 @@ export function initFormTelegram(options = {}) {
       fullName: (data.get('fullName') || '').toString().trim(),
       phone: (data.get('phone') || '').toString().trim(),
       course: (data.get('course') || '').toString(),
+      source: (data.get('source') || '').toString(),
       note: (data.get('note') || '').toString().trim()
     };
   };
@@ -94,12 +95,14 @@ export function initFormTelegram(options = {}) {
     const okName = data.fullName.length >= 3;
     const okPhone = PHONE_REGEX.test(data.phone);
     const okCourse = Boolean(data.course);
+    const okSource = Boolean(data.source);
     const okNote = data.note.length === 0 || data.note.length >= 10;
     const consent = form.querySelector('#consent')?.checked ?? false;
 
     setHelper('err-fullName', okName);
     setHelper('err-phone', okPhone);
     setHelper('err-course', okCourse);
+    setHelper('err-source', okSource);
     const consentHelp = document.getElementById('consentHelp');
     if (consentHelp) consentHelp.classList.toggle('show', !consent);
     const noteHelper = document.getElementById('err-note');
@@ -108,8 +111,9 @@ export function initFormTelegram(options = {}) {
     form.fullName?.setAttribute('aria-invalid', okName ? 'false' : 'true');
     form.phone?.setAttribute('aria-invalid', okPhone ? 'false' : 'true');
     form.course?.setAttribute('aria-invalid', okCourse ? 'false' : 'true');
+    form.source?.setAttribute('aria-invalid', okSource ? 'false' : 'true');
 
-    if (!(okName && okPhone && okCourse && consent && okNote)) {
+    if (!(okName && okPhone && okCourse && okSource && consent && okNote)) {
       const firstInvalid = form.querySelector('[aria-invalid="true"], #consent:not(:checked)');
       firstInvalid?.focus({ preventScroll: false });
       return false;

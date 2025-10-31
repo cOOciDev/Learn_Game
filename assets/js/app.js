@@ -4,92 +4,152 @@ import { initFormTelegram } from './form-telegram.js';
 const COURSES = [
   {
     id: 'unity-mini',
-    duration: '1×/week · 2h',
-    tags: ['Unity', 'Rapid'],
+    duration: { en: '1x/week • 2h', fa: '۱ بار در هفته • ۲ ساعت' },
+    tags: { en: ['Unity', 'Rapid'], fa: ['یونیتی', 'سریع'] },
     fa: {
-      title: 'مینی دوره بازی‌سازی با Unity',
-      summary: 'شروع سریع با محیط یونیتی و ساخت یک مینی‌گیم قابل انتشار.',
-      outcomes: ['تنظیم پروژه و دارایی‌ها', 'کار با Scene و Prefab', 'ساخت گیم‌پلی ساده', 'خروجی برای پلتفرم']
+      title: 'دوره فشرده یونیتی',
+      summary: 'شروعی سریع برای مهارت‌های یونیتی و ساخت یک بازی کوچک قابل‌بازی.',
+      outcomes: [
+        'راه‌اندازی پروژه و دارایی‌ها',
+        'مدیریت صحنه‌ها و پری‌فب‌ها',
+        'طراحی حلقه اصلی گیم‌پلی',
+        'آماده‌سازی ساده برای بیلد'
+      ]
     },
     en: {
       title: 'Unity Mini Course',
       summary: 'Kick-start Unity skills and ship a playable mini game.',
-      outcomes: ['Project & asset setup', 'Scenes & prefabs', 'Core gameplay loop', 'Simple build pipeline']
+      outcomes: [
+        'Project & asset setup',
+        'Scenes & prefabs',
+        'Core gameplay loop',
+        'Simple build pipeline'
+      ]
     }
   },
   {
     id: 'pro-gamedev',
-    duration: '1×/week · 2h',
-    tags: ['Pipeline'],
+    duration: { en: '1x/week • 2h', fa: '۱ بار در هفته • ۲ ساعت' },
+    tags: { en: ['Pipeline'], fa: ['پایپ‌لاین'] },
     fa: {
-      title: 'دوره بازی‌ساز حرفه‌ای',
-      summary: 'از ایده تا نسخه قابل تست با تمرکز روی فرآیند کامل تولید و انتشار.',
-      outcomes: ['طراحی لوپ گیم‌پلی', 'تهیه ویژن آرت', 'پروتوتایپ سریع', 'برنامه انتشار آلفا']
+      title: 'دوره حرفه‌ای توسعه بازی',
+      summary: 'مسیر کامل از ایده تا نسخه آلفای صیقل‌خورده.',
+      outcomes: [
+        'طراحی حلقه گیم‌پلی',
+        'سند دید هنری',
+        'نمونه‌سازی سریع',
+        'برنامه‌ریزی لانچ آلفا'
+      ]
     },
     en: {
       title: 'Pro Game Developer',
       summary: 'End-to-end pipeline from concept to polished alpha.',
-      outcomes: ['Gameplay loop design', 'Art vision doc', 'Rapid prototyping', 'Alpha launch planning']
+      outcomes: [
+        'Gameplay loop design',
+        'Art vision doc',
+        'Rapid prototyping',
+        'Alpha launch planning'
+      ]
     }
   },
   {
     id: 'modeling-3d',
-    duration: '1×/week · 2h',
-    tags: ['3D'],
+    duration: { en: '1x/week • 2h', fa: '۱ بار در هفته • ۲ ساعت' },
+    tags: { en: ['3D'], fa: ['سه‌بعدی'] },
     fa: {
       title: 'مدل‌سازی سه‌بعدی برای بازی',
-      summary: 'ساخت مدل‌های Low/High Poly با UV تمیز و آماده ورود به موتور بازی.',
-      outcomes: ['مدل‌سازی اصولی', 'UV Unwrap و Bake', 'متریال مناسب بازی', 'بهینه‌سازی خروجی']
+      summary: 'ساخت مدل‌های Low/High Poly تمیز و آماده برای موتورهای زمان-واقعی.',
+      outcomes: [
+        'فرآیندهای مدل‌سازی',
+        'باز کردن UV و پخت',
+        'متریال‌های مناسب بازی',
+        'بهینه‌سازی نهایی'
+      ]
     },
     en: {
       title: '3D Modeling for Games',
       summary: 'Craft clean low/high poly assets ready for real-time engines.',
-      outcomes: ['Modeling workflows', 'UV unwrap & bake', 'Game-ready materials', 'Optimization pass']
+      outcomes: [
+        'Modeling workflows',
+        'UV unwrap & bake',
+        'Game-ready materials',
+        'Optimization pass'
+      ]
     }
   },
   {
     id: 'game-animation',
-    duration: '1×/week · 2h',
-    tags: ['Animation'],
+    duration: { en: '1x/week • 2h', fa: '۱ بار در هفته • ۲ ساعت' },
+    tags: { en: ['Animation'], fa: ['انیمیشن'] },
     fa: {
-      title: 'انیمیشن‌سازی در بازی',
-      summary: 'Rig، وزن‌دهی و ساخت چرخه‌های حرکت برای کاراکترهای بازی.',
-      outcomes: ['Rig & Weight', 'لوپ حرکت/حمله', 'خروجی FBX تمیز', 'ادغام در موتور بازی']
+      title: 'انیمیشن بازی',
+      summary: 'ریگ، وزن‌دهی و انیمیت لوپ‌های قهرمان برای گیم‌پلی واکنش‌گرا.',
+      outcomes: [
+        'ریگ و وزن‌دهی',
+        'سیکل‌های راه‌رفتن و حمله',
+        'خروجی تمیز FBX',
+        'انتگره‌کردن با موتور'
+      ]
     },
     en: {
       title: 'Game Animation',
       summary: 'Rig, weight, and animate hero loops for responsive gameplay.',
-      outcomes: ['Rig & weighting', 'Walk / attack cycles', 'Clean FBX export', 'Engine integration']
+      outcomes: [
+        'Rig & weighting',
+        'Walk / attack cycles',
+        'Clean FBX export',
+        'Engine integration'
+      ]
     }
   },
   {
     id: 'uiux-game',
-    duration: '1×/week · 2h',
-    tags: ['UI/UX'],
+    duration: { en: '1x/week • 2h', fa: '۱ بار در هفته • ۲ ساعت' },
+    tags: { en: ['UI/UX'], fa: ['UI/UX'] },
     fa: {
-      title: 'طراحی UI/UX برای بازی',
-      summary: 'طراحی HUD و منوهای تعاملی با اصول تجربه‌کاربری مخصوص بازی.',
-      outcomes: ['طراحی Wireframe بازی', 'طراحی HUD / Menu', 'مدیریت حالات UI', 'نظام تایپوگرافی']
+      title: 'طراحی UI/UX بازی',
+      summary: 'سیستم‌های HUD و منو واکنش‌گرا با تجربه کاربری آماده تولید.',
+      outcomes: [
+        'وایرفریم‌های بازی',
+        'جریان‌های HUD و منو',
+        'مدیریت حالت',
+        'سیستم‌های تایپوگرافی'
+      ]
     },
     en: {
       title: 'Game UI/UX Design',
       summary: 'Responsive HUD/Menu systems with production-ready UX.',
-      outcomes: ['Game wireframes', 'HUD / menu flows', 'State management', 'Typography systems']
+      outcomes: [
+        'Game wireframes',
+        'HUD / menu flows',
+        'State management',
+        'Typography systems'
+      ]
     }
   },
   {
     id: 'oop-csharp',
-    duration: '1×/week · 2h',
-    tags: ['Code'],
+    duration: { en: '1x/week • 2h', fa: '۱ بار در هفته • ۲ ساعت' },
+    tags: { en: ['Code'], fa: ['کدنویسی'] },
     fa: {
-      title: 'برنامه‌نویسی شی‌گرا (C#)',
-      summary: 'اصول OOP با مثال‌های عملی گیم‌پلی و معماری تمیز در یونیتی.',
-      outcomes: ['کلاس و اینترفیس', 'اصول ساده SOLID', 'Event & State Machine', 'ساختاردهی پروژه']
+      title: 'OOP برای بازی‌ها (C#)',
+      summary: 'به‌کارگیری اصول OOP در معماری گیم‌پلی یونیتی.',
+      outcomes: [
+        'کلاس‌ها و اینترفیس‌ها',
+        'الزامات SOLID',
+        'رویدادها و ماشین‌حالت‌ها',
+        'معماری پروژه'
+      ]
     },
     en: {
       title: 'OOP for Games (C#)',
       summary: 'Apply OOP principles inside Unity gameplay architecture.',
-      outcomes: ['Classes & interfaces', 'SOLID essentials', 'Events & state machines', 'Project architecture']
+      outcomes: [
+        'Classes & interfaces',
+        'SOLID essentials',
+        'Events & state machines',
+        'Project architecture'
+      ]
     }
   }
 ];
@@ -196,18 +256,20 @@ const renderCourses = (lang) => {
   const locale = lang === 'fa' ? 'fa' : 'en';
 
   grid.innerHTML = '';
-  select.innerHTML = `<option value="" disabled selected>${locale === 'fa' ? 'یک دوره را انتخاب کنید…' : 'Select a course…'}</option>`;
+  select.innerHTML = `<option value="" disabled selected>${locale === 'fa' ? 'لطفاً یک دوره انتخاب کنید…' : 'Select a course…'}</option>`;
 
   COURSES.forEach((course) => {
     const copy = course[locale];
+    const tags = Array.isArray(course.tags) ? course.tags : course.tags?.[locale] || course.tags?.en || [];
+    const duration = typeof course.duration === 'string' ? course.duration : course.duration?.[locale] || course.duration?.en || '';
     const article = document.createElement('article');
     article.className = 'card course-card';
     article.dataset.reveal = 'up';
     article.innerHTML = `
       <header>
         <div class="meta">
-          <span class="badge">${course.tags.join(' · ')}</span>
-          <span class="duration">${course.duration}</span>
+          <span class="badge">${tags.join(' • ')}</span>
+          <span class="duration">${duration}</span>
         </div>
         <strong>${copy.title}</strong>
       </header>
@@ -227,7 +289,7 @@ const renderCourses = (lang) => {
 
     const opt = document.createElement('option');
     opt.value = course.id;
-    opt.textContent = `${copy.title} — ${course.duration}`;
+    opt.textContent = `${copy.title} — ${duration}`;
     select.appendChild(opt);
   });
 };
