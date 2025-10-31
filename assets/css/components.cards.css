@@ -1,0 +1,88 @@
+@layer components {
+  .grid-cards {
+    display: grid;
+    gap: clamp(16px, 4vw, 24px);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .card {
+    background: linear-gradient(180deg, rgba(20, 12, 40, 0.92), rgba(8, 4, 20, 0.92));
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(129, 114, 194, 0.22);
+    box-shadow: var(--shadow-xs);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: clamp(20px, 4vw, 26px);
+    min-height: 100%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .card header {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    position: relative;
+    min-height: auto;
+  }
+
+  .card header strong {
+    font-size: var(--step-1);
+  }
+
+  .card .meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    color: var(--ink-2);
+    font-size: var(--step--1);
+  }
+
+  .card ul {
+    list-style: disc;
+    padding-inline-start: 1.2rem;
+    color: var(--ink-2);
+    display: grid;
+    gap: 6px;
+    font-size: var(--step--1);
+  }
+
+  .card footer {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: var(--step--2);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--ink-2);
+  }
+
+  .duration {
+    border-radius: 999px;
+    padding: 6px 12px;
+    background: rgba(124, 94, 255, 0.16);
+    border: 1px solid rgba(124, 94, 255, 0.3);
+    color: var(--ink-1);
+    font-size: var(--step--2);
+    font-weight: 600;
+  }
+}

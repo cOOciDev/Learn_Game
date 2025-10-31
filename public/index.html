@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark" data-accent="violet">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title data-i18n="meta.title">CoociDev ? ?????? ????? ????? ?????????</title>
+  <meta name="description" content="?????? CoociDev? ????? ??????? ?????????? ??????? ????????? ???????? UI/UX ? ???????????? C#. ??????? ???????." data-i18n-attr="content:meta.description" />
+  <meta property="og:title" content="CoociDev ? GameDev Academy" data-i18n-attr="content:meta.ogTitle" />
+  <meta property="og:description" content="Project-first GameDev training" data-i18n-attr="content:meta.ogDesc" />
+  <meta name="theme-color" content="#0b021e" />
+
+  <link rel="stylesheet" href="../assets/css/fonts.css" />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/themes.light.css" />
+  <link rel="stylesheet" href="../assets/css/themes.cyber.css" />
+  <link rel="stylesheet" href="../assets/css/themes.sunset.css" />
+  <link rel="stylesheet" href="../assets/css/themes.forest.css" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.buttons.css" />
+  <link rel="stylesheet" href="../assets/css/components.pills.css" />
+  <link rel="stylesheet" href="../assets/css/components.cards.css" />
+  <link rel="stylesheet" href="../assets/css/sections.header.css" />
+  <link rel="stylesheet" href="../assets/css/sections.hero.css" />
+  <link rel="stylesheet" href="../assets/css/sections.logos.css" />
+  <link rel="stylesheet" href="../assets/css/sections.work.css" />
+  <link rel="stylesheet" href="../assets/css/sections.syllabus.css" />
+  <link rel="stylesheet" href="../assets/css/sections.testimonials.css" />
+  <link rel="stylesheet" href="../assets/css/sections.form.css" />
+  <link rel="stylesheet" href="../assets/css/sections.footer.css" />
+  <link rel="stylesheet" href="../assets/css/utilities.css" />
+</head>
+<body class="lang-fa">
+  <div id="scrollbar" aria-hidden="true"></div>
+
+  <header>
+    <div class="container site-header">
+      <a class="brand" href="#hero" aria-label="CoociDev Home">
+        <span class="brand-badge">
+          <img src="./images/logo.svg" alt="" width="28" height="28" loading="lazy" />
+        </span>
+        <span>CoociDev</span>
+        <span data-i18n="hero.pill1">??????????</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="#about" data-i18n="header.about">?????? ??</a>
+        <a class="nav-link" href="#courses" data-i18n="header.courses">???????</a>
+        <a class="nav-link" href="#work" data-i18n="header.work">????? ???</a>
+        <a class="nav-link" href="#syllabus" data-i18n="header.syllabus">????????</a>
+        <a class="nav-link" href="#testimonials" data-i18n="header.testimonials">????? ?????</a>
+        <a class="nav-link" href="#contact" data-i18n="header.contact">????</a>
+      </nav>
+
+      <div class="actions">
+        <button id="langToggle" class="btn-ghost" type="button" aria-label="Toggle language">FA / EN</button>
+        <button id="themeToggle" class="btn-ghost" type="button" aria-label="Toggle theme">
+          <span id="themeIcon" aria-hidden="true">??</span>
+        </button>
+        <button id="menuBtn" class="btn-ghost" type="button" aria-controls="mobileMenu" aria-expanded="false">?</button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="container hidden" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="menuBtn">
+      <div class="glass">
+        <nav>
+          <a class="btn-ghost" href="#about" data-i18n="header.about">?????? ??</a>
+          <a class="btn-ghost" href="#courses" data-i18n="header.courses">???????</a>
+          <a class="btn-ghost" href="#work" data-i18n="header.work">????? ???</a>
+          <a class="btn-ghost" href="#syllabus" data-i18n="header.syllabus">????????</a>
+          <a class="btn-ghost" href="#testimonials" data-i18n="header.testimonials">????? ?????</a>
+          <a class="btn-ghost" href="#contact" data-i18n="header.contact">????</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+        <section id="hero" class="hero">
+      <!-- <div class="hero-canvas" aria-hidden="true">
+        <canvas id="hero3d"></canvas>
+      </div> -->
+      <div class="hero-inner">
+        <h1 class="use-fa" data-i18n="hero.title">با CoociDev حرفه‌ای بازی بساز؛ از ایده تا نسخه قابل انتشار</h1>
+        <p class="use-fa" data-i18n="hero.subtitle">
+          آکادمی تخصصی آموزش بازی‌سازی؛ یونیتی، مدل‌سازی و انیمیشن سه‌بعدی، طراحی UI/UX و برنامه‌نویسی C#.
+        </p>
+        <div class="hero-actions flex">
+          <a class="btn" href="#courses" data-i18n="hero.ctaPrimary">مشاهده دوره‌ها</a>
+          <a class="btn-ghost" href="#contact" data-i18n="hero.ctaSecondary">ثبت‌نام سریع</a>
+        </div>
+        <div class="hero-pills flex">
+          <span class="pill active"><i>🎮</i><span data-i18n="hero.pill1">پروژه‌محور</span></span>
+          <span class="pill"><i>⚡</i><span data-i18n="hero.pill2">جلسه‌های ۲ ساعته</span></span>
+          <span class="pill"><i>🧭</i><span data-i18n="hero.pill3">مسیر یادگیری شفاف</span></span>
+          <span class="pill"><i>📱</i><span data-i18n="hero.pill4">کاملاً ریسپانسیو</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="logos" data-reveal="scale">
+        <span data-i18n="logos.unity">Unity</span>
+        <span data-i18n="logos.unreal">Unreal</span>
+        <span data-i18n="logos.blender">Blender</span>
+        <span data-i18n="logos.figma">Figma</span>
+        <span data-i18n="logos.csharp">C#</span>
+      </div>
+    </section>
+
+    <section id="work" class="container section-block" data-reveal="up">
+      <header>
+        <h2 data-i18n="work.title">????? ?????? ?????</h2>
+        <p class="mt-3" data-i18n="work.subtitle">?????????? ?? ????????? ???? ? ??????? ????????.</p>
+      </header>
+
+      <div class="flex work-filters" data-filters>
+        <button class="pill active" type="button" data-filter="all" data-i18n="work.filterAll">???</button>
+        <button class="pill" type="button" data-filter="mobile" data-i18n="work.filterMobile">??????</button>
+        <button class="pill" type="button" data-filter="pc" data-i18n="work.filterPc">PC</button>
+        <button class="pill" type="button" data-filter="vr" data-i18n="work.filterVr">VR</button>
+      </div>
+
+      <div class="work-grid" data-cards>
+        <article class="card work-card" data-cat="mobile" data-reveal="up">
+          <div class="media" style="background-image:url('./images/badge-unity.svg');" aria-hidden="true"></div>
+          <h3 data-i18n="work.cardA.title">Runner ?????? ? Shaper City</h3>
+          <p data-i18n="work.cardA.desc">????? ???? ? ???????? ????? ?? ?????? ? LiveOps.</p>
+          <ul>
+            <li data-i18n="work.cardA.points.0">????? ??? ? ?????</li>
+            <li data-i18n="work.cardA.points.1">Addressables ???? Asset ??</li>
+            <li data-i18n="work.cardA.points.2">????????? A/B ???</li>
+            <li data-i18n="work.cardA.points.3">LCP ??? 2.5s</li>
+          </ul>
+        </article>
+
+        <article class="card work-card" data-cat="pc" data-reveal="up">
+          <div class="media" style="background-image:url('./images/badge-unreal.svg');" aria-hidden="true"></div>
+          <h3 data-i18n="work.cardB.title">????????? FPS ? Steel Horizon</h3>
+          <p data-i18n="work.cardB.desc">???? ???? ?? ????? ???? ???????.</p>
+          <ul>
+            <li data-i18n="work.cardB.points.0">State machine ??????</li>
+            <li data-i18n="work.cardB.points.1">Netcode ????</li>
+            <li data-i18n="work.cardB.points.2">?????????? GPU</li>
+            <li data-i18n="work.cardB.points.3">HUD ?????????</li>
+          </ul>
+        </article>
+
+        <article class="card work-card" data-cat="vr" data-reveal="up">
+          <div class="media" style="background-image:url('./images/badge-blender.svg');" aria-hidden="true"></div>
+          <h3 data-i18n="work.cardC.title">VR Experience ? Deep Space Labs</h3>
+          <p data-i18n="work.cardC.desc">????? ?????? VR ?? ??????? ??? ????.</p>
+          <ul>
+            <li data-i18n="work.cardC.points.0">Interaction Toolkit</li>
+            <li data-i18n="work.cardC.points.1">Pass-through UX</li>
+            <li data-i18n="work.cardC.points.2">Performance Budget</li>
+            <li data-i18n="work.cardC.points.3">???? Build ????????</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="syllabus" class="container section-block" data-reveal="up">
+      <h2 class="text-center" data-i18n="syllabus.title">????????? ????? CoociDev</h2>
+      <div class="syllabus-grid mt-4">
+        <article class="syllabus-item" data-reveal="up">
+          <strong data-i18n="syllabus.items.strategy.title">???????? ? ?????</strong>
+          <p data-i18n="syllabus.items.strategy.desc">?? ??? ????? ?? ?????? ???????.</p>
+          <ul>
+            <li data-i18n="syllabus.items.strategy.points.0">????? ??? ?????</li>
+            <li data-i18n="syllabus.items.strategy.points.1">Game Design Doc</li>
+            <li data-i18n="syllabus.items.strategy.points.2">Economy balancing</li>
+          </ul>
+        </article>
+
+        <article class="syllabus-item" data-reveal="up">
+          <strong data-i18n="syllabus.items.production.title">????? ? ???</strong>
+          <p data-i18n="syllabus.items.production.desc">Pipeline ??????/?????? Git ? Build.</p>
+          <ul>
+            <li data-i18n="syllabus.items.production.points.0">Version Control</li>
+            <li data-i18n="syllabus.items.production.points.1">CI/CD ??? ?? GitHub</li>
+            <li data-i18n="syllabus.items.production.points.2">Addressables ? Subscene</li>
+          </ul>
+        </article>
+
+        <article class="syllabus-item" data-reveal="up">
+          <strong data-i18n="syllabus.items.polish.title">?????? ? ?????</strong>
+          <p data-i18n="syllabus.items.polish.desc">VFX ????? ? ??? ?????.</p>
+          <ul>
+            <li data-i18n="syllabus.items.polish.points.0">Shader Graph</li>
+            <li data-i18n="syllabus.items.polish.points.1">Lighting pass</li>
+            <li data-i18n="syllabus.items.polish.points.2">Design Systems</li>
+            <li data-i18n="syllabus.items.polish.points.3">Playtest & Telemetry</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="courses" class="container section-block" data-reveal="up">
+      <h2 class="text-center">Courses</h2>
+      <p class="text-center text-ink-2 mt-2" data-i18n="hero.subtitle">???????? CoociDev</p>
+      <div class="grid-cards mt-6" data-courses></div>
+    </section>
+
+    <section id="testimonials" class="container section-block" data-reveal="up">
+      <h2 class="text-center" data-i18n="testimonials.title">????? ????????</h2>
+      <div class="testimonials-grid mt-4">
+        <article class="testimonial" data-reveal="up">
+          <blockquote data-i18n="testimonials.a.quote">??? ?? ? ???? ????? ???????? ...</blockquote>
+          <footer>
+            <img src="./images/avatar-1.svg" alt="" loading="lazy" />
+            <span data-i18n="testimonials.a.name">????? ? ???? Pro GameDev</span>
+          </footer>
+        </article>
+        <article class="testimonial" data-reveal="up">
+          <blockquote data-i18n="testimonials.b.quote">??????? ???? ????? ? ????????? ???? ???????...</blockquote>
+          <footer>
+            <img src="./images/avatar-2.svg" alt="" loading="lazy" />
+            <span data-i18n="testimonials.b.name">?????? ? ???? UI/UX ????</span>
+          </footer>
+        </article>
+        <article class="testimonial" data-reveal="up">
+          <blockquote data-i18n="testimonials.c.quote">????? ??????? ???? ? ???? ???...</blockquote>
+          <footer>
+            <img src="./images/avatar-3.svg" alt="" loading="lazy" />
+            <span data-i18n="testimonials.c.name">???? ? ???? ??????? ????</span>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container section-block" data-reveal="up">
+      <h2 class="text-center" data-i18n="contact.title">??????? ? ??????</h2>
+      <p class="text-center text-ink-2" data-i18n="contact.subtitle">??? ??? ?? ?? ???? ?? ?? ?? ???? ?? ??? ???? ??????.</p>
+
+      <form id="lead-form" novalidate data-reveal="up">
+        <div>
+          <label for="fullName" data-i18n="contact.fields.name">??? ? ??? ????????</label>
+          <input id="fullName" name="fullName" type="text" required autocomplete="name" data-i18n-attr="placeholder:contact.placeholders.name" placeholder="?????: ??? ?????" />
+          <p id="err-fullName" class="helper">??? ???? ????? ? ??????? ????.</p>
+        </div>
+
+        <div>
+          <label for="phone" data-i18n="contact.fields.phone">????? ????</label>
+          <input id="phone" name="phone" type="tel" required autocomplete="tel" inputmode="numeric" pattern="^09\d{9}$" data-i18n-attr="placeholder:contact.placeholders.phone" placeholder="09xxxxxxxxx" />
+          <p id="err-phone" class="helper">????? ???? ???? ?? 09 ???? ???.</p>
+        </div>
+
+        <div>
+          <label for="course" data-i18n="contact.fields.course">?????? ????</label>
+          <select id="course" name="course" required></select>
+          <p id="err-course" class="helper">?? ???? ?? ?????? ????.</p>
+        </div>
+
+        <div style="grid-column:1/-1">
+          <label for="note" data-i18n="contact.fields.note">??????? (???????)</label>
+          <textarea id="note" name="note" data-i18n-attr="placeholder:contact.placeholders.note" placeholder="??? ?? ????????? ????? ???..."></textarea>
+          <p id="err-note" class="helper">???? ?? ????? ?? ?? ??????? ???????.</p>
+        </div>
+
+        <div class="checkbox-field">
+          <input id="consent" type="checkbox" required aria-describedby="consentHelp" />
+          <label for="consent" data-i18n="contact.consent">?????? ? ???? ????? ?? ????????</label>
+        </div>
+        <p id="consentHelp" class="helper">???? ????? ???? ?????? ?? ???????.</p>
+
+        <div class="form-actions">
+          <button class="btn w-full" type="submit" data-i18n="contact.submit">???????</button>
+        </div>
+
+        <p id="ok" class="form-status" data-i18n="contact.ok">??????? ??? ??? ??.</p>
+        <p id="fail" class="form-status" data-i18n="contact.fail">????? ?? ???.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-shell">
+      <div class="footer-top" data-reveal="up">
+        <div class="stack">
+          <div class="brand">
+            <span class="brand-badge"></span><span>CoociDev</span>
+          </div>
+          <p class="max-w-40ch text-ink-2" data-i18n="footer.tagline">????? ????? ????????? ?? ????? ??? ????????? ???? ? ???? ?????????.</p>
+        </div>
+
+        <div class="footer-links">
+          <a class="btn-ghost" href="#about" data-i18n="footer.links.about">?????? ??</a>
+          <a class="btn-ghost" href="#courses" data-i18n="footer.links.courses">???????</a>
+          <a class="btn-ghost" href="#syllabus" data-i18n="footer.links.syllabus">?????</a>
+          <a class="btn-ghost" href="#testimonials" data-i18n="footer.links.testimonials">????? ?????</a>
+          <a class="btn-ghost" href="#contact" data-i18n="footer.links.contact">????</a>
+          <a class="btn-ghost" href="mailto:info@coocidev.com" data-i18n="footer.links.email">?????</a>
+        </div>
+
+        <div class="stack">
+          <strong data-i18n="footer.links.privacy">??????? ??? ??? ???? ???? ????? ??????? ??????.</strong>
+          <div class="footer-social">
+            <a href="#" aria-label="Discord">
+              <img src="./icons/discord.svg" alt="" width="22" height="22" />
+            </a>
+            <a href="#" aria-label="YouTube">
+              <img src="./icons/youtube.svg" alt="" width="22" height="22" />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <img src="./icons/instagram.svg" alt="" width="22" height="22" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-small">
+        <span>? <span id="y">2024</span> CoociDev</span>
+        <span>All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.TELEGRAM_PROXY_URL = '';
+    window.TELEGRAM_CHAT_ID = 'YOUR_CHAT_ID';
+    window.TELEGRAM_BOT_TOKEN = 'YOUR_BOT_TOKEN';
+  </script>
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>
+

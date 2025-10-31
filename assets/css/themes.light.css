@@ -1,0 +1,158 @@
+[data-theme="light"] {
+  --ink-1: #18152b;
+  --ink-2: #3a3760;
+  --ink-3: #615d8c;
+  --bg-0: #f4f5ff;
+  --bg-1: #e9e8ff;
+  --surface-0: rgba(255, 255, 255, 0.92);
+  --surface-1: rgba(245, 243, 255, 0.96);
+  --surface-border: rgba(124, 94, 255, 0.16);
+  --glass-border: rgba(124, 94, 255, 0.18);
+  --accent-soft: rgba(124, 94, 255, 0.12);
+  --shadow-xs: 0 12px 24px rgba(131, 125, 191, 0.16);
+  --shadow-sm: 0 18px 40px rgba(131, 125, 191, 0.2);
+  --shadow-lg: 0 32px 70px rgba(131, 125, 191, 0.22);
+}
+
+[data-theme="light"] body {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(124, 94, 255, 0.18), transparent 62%),
+    radial-gradient(circle at 75% 12%, rgba(193, 102, 255, 0.16), transparent 58%),
+    var(--bg-0);
+  color: var(--ink-1);
+}
+
+[data-theme="light"] header {
+  background: rgba(244, 243, 255, 0.88);
+  border-bottom-color: rgba(124, 94, 255, 0.22);
+  box-shadow: 0 10px 24px rgba(123, 108, 204, 0.18);
+}
+
+[data-theme="light"] header.scrolled {
+  background: rgba(240, 238, 255, 0.96);
+}
+
+[data-theme="light"] .brand span {
+  color: var(--ink-2);
+}
+
+[data-theme="light"] .btn-ghost {
+  background: rgba(124, 94, 255, 0.08);
+  border-color: rgba(124, 94, 255, 0.25);
+  color: var(--ink-1);
+}
+
+[data-theme="light"] .btn-ghost:hover,
+[data-theme="light"] .btn-ghost:focus-visible {
+  background: rgba(124, 94, 255, 0.16);
+  border-color: rgba(124, 94, 255, 0.4);
+}
+
+[data-theme="light"] .pill {
+  background: rgba(124, 94, 255, 0.1);
+  border-color: rgba(124, 94, 255, 0.2);
+  color: var(--ink-2);
+}
+
+[data-theme="light"] .pill.active {
+  color: #fff;
+}
+
+[data-theme="light"] .logos {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(124, 94, 255, 0.18);
+  box-shadow: 0 12px 28px rgba(123, 108, 204, 0.16);
+}
+
+[data-theme="light"] .section-block {
+  background: var(--surface-0);
+  border-color: rgba(124, 94, 255, 0.16);
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme="light"] .work-card,
+[data-theme="light"] .syllabus-item,
+[data-theme="light"] .testimonial,
+[data-theme="light"] .course-card,
+[data-theme="light"] #mobileMenu .glass {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(124, 94, 255, 0.16);
+  box-shadow: var(--shadow-xs);
+  color: var(--ink-1);
+}
+
+[data-theme="light"] .course-card p,
+[data-theme="light"] .work-card p,
+[data-theme="light"] .syllabus-item p,
+[data-theme="light"] .testimonial blockquote {
+  color: var(--ink-2);
+}
+
+[data-theme="light"] form input,
+[data-theme="light"] form select,
+[data-theme="light"] form textarea {
+  background: rgba(248, 247, 255, 0.96);
+  border-color: rgba(124, 94, 255, 0.22);
+  color: var(--ink-1);
+}
+
+[data-theme="light"] form input:focus-visible,
+[data-theme="light"] form select:focus-visible,
+[data-theme="light"] form textarea:focus-visible {
+  border-color: rgba(124, 94, 255, 0.55);
+  box-shadow: 0 0 0 4px rgba(124, 94, 255, 0.18);
+}
+
+[data-theme="light"] #ok.form-status {
+  background: rgba(40, 167, 69, 0.12);
+  border-color: rgba(40, 167, 69, 0.28);
+  color: #1b7c42;
+}
+
+[data-theme="light"] #fail.form-status {
+  background: rgba(255, 118, 150, 0.12);
+  border-color: rgba(255, 118, 150, 0.28);
+  color: #b12c52;
+}
+
+[data-theme="light"] footer {
+  background: rgba(247, 245, 255, 0.96);
+  border-top-color: rgba(124, 94, 255, 0.18);
+  color: var(--ink-1);
+}
+
+[data-theme="light"] #mobileMenu {
+  background: linear-gradient(180deg, rgba(244, 243, 255, 0.88), rgba(244, 243, 255, 0.32));
+}
+
+[data-theme="light"] #mobileMenu .glass {
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--ink-1);
+  box-shadow: 0 16px 32px rgba(123, 108, 204, 0.18);
+}
+
+[data-theme="light"] .hero {
+  background:
+    radial-gradient(circle at 18% 20%, rgba(124, 94, 255, 0.22), transparent 58%),
+    radial-gradient(circle at 82% 26%, rgba(84, 182, 255, 0.18), transparent 60%),
+    radial-gradient(circle at 50% 96%, rgba(193, 170, 255, 0.16), transparent 65%);
+}
+
+[data-theme="light"] .hero::before {
+  background: conic-gradient(from 120deg at 50% 50%, rgba(84, 182, 255, 0.18), rgba(193, 146, 255, 0.35), rgba(124, 94, 255, 0.16), rgba(84, 182, 255, 0.18));
+  opacity: 0.45;
+}
+
+[data-theme="light"] .hero::after {
+  opacity: 0.75;
+}
+
+[data-theme="light"] .footer-social a {
+  background: rgba(124, 94, 255, 0.1);
+  border-color: rgba(124, 94, 255, 0.24);
+  color: var(--accent-1);
+}
+
+[data-theme="light"] .footer-small {
+  color: var(--ink-3);
+}

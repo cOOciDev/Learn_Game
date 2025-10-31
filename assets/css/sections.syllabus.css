@@ -1,0 +1,39 @@
+@layer sections {
+  #syllabus {
+    display: grid;
+    gap: clamp(20px, 5vw, 28px);
+  }
+
+  .syllabus-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .syllabus-item {
+    background: rgba(18, 10, 32, 0.9);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(129, 114, 194, 0.24);
+    padding: clamp(18px, 4vw, 22px);
+    display: grid;
+    gap: 10px;
+    box-shadow: var(--shadow-xs);
+  }
+
+  .syllabus-item strong {
+    font-size: var(--step-1);
+  }
+
+  .syllabus-item p {
+    color: var(--ink-2);
+    font-size: var(--step--1);
+  }
+
+  .syllabus-item ul {
+    list-style: disc;
+    padding-inline-start: 1.2rem;
+    color: var(--ink-3);
+    display: grid;
+    gap: 4px;
+  }
+}

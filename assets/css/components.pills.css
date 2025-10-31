@@ -1,0 +1,37 @@
+@layer components {
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 18px;
+    min-height: 44px;
+    border-radius: 999px;
+    font-size: var(--step--1);
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid transparent;
+    color: var(--ink-1);
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .pill i {
+    font-style: normal;
+  }
+
+  .pill.active {
+    background: linear-gradient(120deg, var(--accent-1), var(--accent-2));
+    border-color: rgba(255, 255, 255, 0.18);
+    box-shadow: var(--accent-glow);
+  }
+
+  .pill[data-filter] {
+    cursor: pointer;
+  }
+
+  .pill[data-filter].active,
+  .pill[data-filter]:focus-visible {
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+  }
+}

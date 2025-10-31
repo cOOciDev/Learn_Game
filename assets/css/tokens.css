@@ -1,0 +1,57 @@
+:root {
+  color-scheme: dark;
+  --font-fa: "Peyda", "Vazirmatn", system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+  --font-en: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --ink-1: #f8faff;
+  --ink-2: #bbc5ff;
+  --ink-3: #7f87b7;
+  --ink-4: #4c5075;
+  --bg-0: #05010f;
+  --bg-1: #0d0621;
+  --bg-2: rgba(21, 12, 42, 0.7);
+  --bg-3: rgba(33, 23, 62, 0.9);
+
+  --accent-1: #7c5eff;
+  --accent-2: #c166ff;
+  --accent-soft: rgba(124, 94, 255, 0.18);
+  --accent-glow: 0 18px 40px rgba(124, 94, 255, 0.45);
+
+  --surface-0: rgba(16, 10, 28, 0.92);
+  --surface-1: rgba(33, 21, 66, 0.78);
+  --surface-2: rgba(61, 36, 120, 0.24);
+  --surface-border: rgba(115, 102, 173, 0.34);
+  --glass-border: rgba(150, 138, 205, 0.22);
+
+  --radius-xs: 10px;
+  --radius-sm: 14px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+
+  --shadow-xs: 0 12px 24px rgba(10, 5, 25, 0.35);
+  --shadow-sm: 0 18px 40px rgba(12, 2, 35, 0.45);
+  --shadow-lg: 0 32px 70px rgba(18, 5, 42, 0.55);
+
+  --step--2: clamp(0.68rem, 0.64rem + 0.22vw, 0.76rem);
+  --step--1: clamp(0.8rem, 0.74rem + 0.28vw, 0.9rem);
+  --step-0: clamp(0.96rem, 0.88rem + 0.35vw, 1rem);
+  --step-1: clamp(1.14rem, 1.04rem + 0.46vw, 1.25rem);
+  --step-2: clamp(1.36rem, 1.18rem + 0.68vw, 1.62rem);
+  --step-3: clamp(1.72rem, 1.45rem + 1.02vw, 2.2rem);
+  --step-4: clamp(2.25rem, 1.8rem + 1.4vw, 3rem);
+
+  --container-max: 1120px;
+  --container-pad: clamp(16px, 4vw, 40px);
+  --header-height: 74px;
+  --scrollbar-height: 3px;
+
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-top: env(safe-area-inset-top, 0px);
+
+  --parallax-x: 0;
+  --parallax-y: 0;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}

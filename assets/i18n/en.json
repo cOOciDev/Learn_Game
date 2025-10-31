@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "title": "CoociDev — GameDev Academy",
+    "description": "CoociDev Academy: Unity, art, animation, UI/UX, and C# courses that ship real projects.",
+    "ogTitle": "CoociDev | GameDev Academy",
+    "ogDesc": "Project-first game development bootcamps built for results."
+  },
+  "header": {
+    "about": "About",
+    "courses": "Courses",
+    "work": "Selected Work",
+    "syllabus": "Syllabus",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Build standout games with CoociDev—from concept to launch-ready",
+    "subtitle": "Project-first training for Unity, 3D art, animation, UI/UX, and C#. Sessions are short, tactical, and geared toward portfolio wins.",
+    "ctaPrimary": "View Courses",
+    "ctaSecondary": "Quick Apply",
+    "pill1": "Project-based",
+    "pill2": "2-hour sessions",
+    "pill3": "Clear learning path",
+    "pill4": "Fully responsive"
+  },
+  "logos": {
+    "unity": "Unity",
+    "unreal": "Unreal",
+    "blender": "Blender",
+    "figma": "Figma",
+    "csharp": "C#"
+  },
+  "work": {
+    "title": "Selected Work",
+    "subtitle": "Recent cohort projects that went from idea to playable product with live operations in mind.",
+    "filterAll": "All",
+    "filterMobile": "Mobile",
+    "filterPc": "PC",
+    "filterVr": "VR",
+    "cardA": {
+      "title": "Runner Mobile — Shaper City",
+      "desc": "Six-week team sprint focused on monetisation loops and LiveOps cadence.",
+      "points": ["Lightweight physics", "Addressables pipeline", "A/B event framework", "LCP < 2.5s"]
+    },
+    "cardB": {
+      "title": "FPS Prototype — Steel Horizon",
+      "desc": "Alpha demo with modular weapon system and responsive UI.",
+      "points": ["Custom state machine", "Netcode foundations", "GPU profiling", "Adaptive HUD"]
+    },
+    "cardC": {
+      "title": "VR Experience — Deep Space Labs",
+      "desc": "Educational VR journey with hand-tracked interactions and spatial UI.",
+      "points": ["Interaction toolkit", "Pass-through UX", "Performance budget", "Store-ready build"]
+    }
+  },
+  "syllabus": {
+    "title": "CoociDev Syllabus Pillars",
+    "items": {
+      "strategy": {
+        "title": "Strategy & Design",
+        "desc": "Audience discovery, gameplay loops, and in-game economy design.",
+        "points": ["Product discovery", "Game design doc", "Economy balancing"]
+      },
+      "production": {
+        "title": "Production & Tech",
+        "desc": "Unity/Unreal pipelines, Git, and lightweight CI for small teams.",
+        "points": ["Version control", "GitHub CI/CD", "Addressables & sub-scenes"]
+      },
+      "polish": {
+        "title": "Polish & Experience",
+        "desc": "Optimised VFX, lighting passes, systematic UI, and user testing.",
+        "points": ["Shader Graph", "Lighting polish", "Design systems", "Playtests & telemetry"]
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Student Stories",
+    "a": {
+      "quote": "Eight weeks in and I pitched my prototype to a publisher. The structure was exactly what I needed.",
+      "name": "Arman — Pro GameDev"
+    },
+    "b": {
+      "quote": "Mentors reviewed my portfolio and UI shipped on Steam! Highly practiced feedback loops.",
+      "name": "Niloufar — Game UI/UX"
+    },
+    "c": {
+      "quote": "Animation deep dives were practical; my rig exported cleanly into Unity with full controller support.",
+      "name": "Shahab — Game Animation"
+    }
+  },
+  "contact": {
+    "title": "Apply & Talk to Us",
+    "subtitle": "Drop your info—our team will reach out within 24 hours.",
+    "fields": {
+      "name": "Full name",
+      "phone": "Phone number",
+      "course": "Choose a course",
+      "note": "Message (optional)"
+    },
+    "placeholders": {
+      "name": "e.g. Sara Rad",
+      "phone": "+9891…",
+      "note": "Tell us about your goals or timing..."
+    },
+    "consent": "I agree to the privacy notice.",
+    "submit": "Submit application",
+    "ok": "Request received—our advisors will reach out shortly.",
+    "fail": "Something went wrong. Please try again or ping us on socials."
+  },
+  "footer": {
+    "tagline": "Specialist GameDev training focused on portfolio-ready output.",
+    "links": {
+      "about": "About",
+      "courses": "Courses",
+      "syllabus": "Syllabus",
+      "testimonials": "Testimonials",
+      "contact": "Contact",
+      "email": "Email",
+      "privacy": "We only use your info to contact you about this request."
+    },
+    "social": {
+      "discord": "Discord",
+      "youtube": "YouTube",
+      "instagram": "Instagram"
+    }
+  }
+}

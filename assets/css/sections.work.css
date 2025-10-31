@@ -1,0 +1,91 @@
+@layer sections {
+  #work {
+    display: grid;
+    gap: clamp(20px, 5vw, 28px);
+  }
+
+  #work header {
+    text-align: center;
+  }
+
+  #work header p {
+    color: var(--ink-2);
+    max-width: 60ch;
+    margin-inline: auto;
+  }
+
+  .work-filters {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .work-grid {
+    display: grid;
+    gap: clamp(18px, 4vw, 24px);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .work-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    will-change: transform;
+  }
+
+  .work-card .media {
+    position: absolute;
+    inset: 0;
+    opacity: 0.3;
+    mix-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.35s ease;
+  }
+
+  .work-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(124, 94, 255, 0.18), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+
+  .work-card:hover,
+  .work-card:focus-within {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .work-card:hover .media,
+  .work-card:focus-within .media {
+    transform: scale(1.05);
+  }
+
+  .work-card:hover::after,
+  .work-card:focus-within::after {
+    opacity: 1;
+  }
+
+  .work-card h3 {
+    font-size: var(--step-1);
+    margin-bottom: 8px;
+  }
+
+  .work-card p {
+    color: var(--ink-2);
+    font-size: var(--step--1);
+    margin-bottom: 12px;
+  }
+
+  .work-card ul {
+    display: grid;
+    gap: 4px;
+    font-size: var(--step--1);
+    color: var(--ink-3);
+    list-style: disc;
+    padding-inline-start: 1.2rem;
+  }
+}

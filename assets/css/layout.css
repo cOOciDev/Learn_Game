@@ -1,0 +1,105 @@
+@layer components {
+  .container {
+    width: min(100%, var(--container-max));
+    margin-inline: auto;
+    padding-inline: var(--container-pad);
+  }
+
+  .page-shell {
+    position: relative;
+  }
+
+  #scrollbar {
+    position: fixed;
+    inset: calc(var(--safe-top) + 0px) 0 auto 0;
+    height: var(--scrollbar-height);
+    background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-out;
+    z-index: 120;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    inset-inline: 0;
+    z-index: 110;
+    backdrop-filter: blur(24px);
+    background: linear-gradient(180deg, rgba(5, 1, 18, 0.9), rgba(5, 1, 18, 0.6));
+    border-bottom: 1px solid rgba(124, 94, 255, 0.22);
+    box-shadow: 0 12px 28px rgba(5, 1, 15, 0.35);
+  }
+
+  header.scrolled {
+    background: rgba(5, 1, 18, 0.94);
+    border-bottom-color: rgba(124, 94, 255, 0.32);
+  }
+
+  header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--header-height);
+    gap: clamp(12px, 4vw, 24px);
+  }
+
+  .stack {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(24px, 5vw, 36px);
+  }
+
+  .section-block {
+    position: relative;
+    border-radius: var(--radius-lg);
+    padding: clamp(32px, 5vw, 48px);
+    background: var(--surface-0);
+    border: 1px solid var(--surface-border);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+  }
+
+  .section-block::before {
+    content: "";
+    position: absolute;
+    inset: -120px;
+    background: radial-gradient(circle at 30% 20%, rgba(124, 94, 255, 0.28), transparent 60%);
+    pointer-events: none;
+  }
+
+  .section-block > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .grid {
+    display: grid;
+    gap: 18px;
+  }
+
+  .flex {
+    display: flex;
+    gap: 12px;
+  }
+
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      position: fixed;
+      width: 100%;
+      inset-inline: 0;
+    }
+
+    main {
+      padding-top: calc(var(--header-height) + var(--safe-top) + 16px);
+    }
+
+    .section-block {
+      padding-inline: clamp(20px, 6vw, 28px);
+    }
+  }
+}
